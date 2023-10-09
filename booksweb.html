@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book store.</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"> 
+    <style>
+#book1{
+  border-radius:17px;
+}
+#navbar{
+background-color:lightcyan;
+border-radius:16px;
+}
+#home{
+    font-family: sans-serif;
+    color:black;
+    background-color:;
+}
+#visit{
+     font-family: sans-serif;
+    color:black;
+     background-color:;
+}
+#dropdown{
+      font-family: sans-serif;
+    color:black;
+     background-color:;
+}
+#queries{
+      font-family: sans-serif;
+    color:black;
+}
+#books{
+}
+li:hover,a:hover,button:hover{
+  background-color:lightblue;
+  border-radius:14px;
+}
+.centered{
+    position:center;
+}
+#heading{
+    color: white;
+}
+#img1{
+    height:400px;
+    width:280px;
+}
+#img2{
+    height:400px;
+}
+#counter{
+background-image: url("bg image.jpg");
+background-size: cover;
+padding-top: 50px;
+padding-bottom: 70px;
+}
+.countericon{
+    font-size: 50px;
+
+}
+#book2{
+    height:350px;
+}
+#last{
+   border-radius: 25px; 
+}
+#footer{
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+#v{
+     box-shadow: 10px 5px 10px lightblue;
+}
+#img1{
+     box-shadow: 10px 5px 10px lightblue;
+}
+#img2{
+     box-shadow: 10px 5px 10px lightblue;
+}
+#i{
+     box-shadow: 10px 5px 10px lightblue;
+}
+</style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="navbar">
+    <a class="navbar-brand" href="#"><img src="book1.jpg" width="80px" id="book1"></img></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="booksweb.html" id="home"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="visit"><b>VISIT</b></a>
+        </li>
+       <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True" id="books"><b>
+    BOOKS</b>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+        <li class="nav-item">
+          <a class="nav-link disabled" id="queries"><b>QUERIES</b></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="col-12">
+          <img src="bookstore2.jpg" width="100%" height="600px">
+        </img>
+    </div>
+ <div class="col-12 text-center mt-4">
+    <h3 style="text-shadow: 2px 4px lightblue;">MOST POPULAR BOOKS</h3>
+ </div>
+
+
+<div class="row justify-content-center mt-5">
+<div class="col-md-3 text-center">
+<img src="t of cities.jpg" style="border-radius:25px" id="v"></img>
+<p style="text-shadow: 1px 2px;">Author</p>
+<h5> Charles Dickens</h5>
+<p><a href="https://en.wikipedia.org/wiki/A_Tale_of_Two_Cities">Read more</a></p>
+</div>
+
+<div class="col-md-3 text-center">
+<img src="little prince.jpg" style="border-radius:25px" id="img1"></img>
+<p style="text-shadow: 1px 2px;">Author</p>
+<h5>    Antoine de Saint-Exupéry</h5>
+<p><a href="https://en.wikipedia.org/wiki/The_Little_Prince">Read more</a></p>
+</div>
+
+<div class="col-md-3 text-center">
+<img src="harrypotter.jpg" style="border-radius:25px" id="img2"></img>
+<p style="text-shadow: 1px 2px;">Author</p>
+<h5>    J. K. Rowling</h5>
+<p><a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone">Read more</a></p>
+</div>
+
+<div class="col-md-3 text-center">
+<img src="ten little.jpg" style="border-radius:25px" id="i"></img>
+<p style="text-shadow: 1px 2px;">Author</p>
+<h5>  Agatha Christie</h5>
+<p><a href="https://en.wikipedia.org/wiki/And_Then_There_Were_None">Read more</a></p>
+</div>
+
+
+<div class="row justify-content-center pb-5" id="counter">
+    <div class="col-md-3 text-center text-black mt-5 mb-3">
+        <i class="bi bi-book-half countericon"></i>
+        <h3>
+            100+<br>
+            No of Books..
+        </h3>
+    </div>
+    <div class="col-md-3 text-center text-black mt-5 mb-3">
+      <i class="bi bi-type-strikethrough countericon"></i>
+        <h3>
+            100+<br>
+            Journers..
+        </h3>
+    </div>
+    <div class="col-md-3 text-center text-black mt-5 mb-3">
+ <i class="bi bi-translate countericon"></i>
+        <h3>
+            50+<br>
+            Languages
+        </h3>
+    </div>
+</div>
+
+
+<div class="row justify-content-evenly pd-3 pt-5">
+<div class="col-md-5 pt-3">
+  <img src="book2.jpg" class="img-fluid" id="book2" style="border-radius:25px"></img>
+</div>
+
+    <div class="col-md-5 pt-1">
+        <h5 style="text-shadow: 2px 2px;">Ratings..</h5>
+      <h5 class="mt-3">
+        The Lord of the Rings
+      </h5>
+      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-success" style="width: 95%"></div>
+</div>
+<h5 class="mt-3">
+        The Great Gatsby
+      </h5>
+<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-info" style="width: 50%"></div>
+</div>
+<h5 class="mt-3">
+       
+To Kill a Mockingbird
+      </h5>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-warning" style="width: 75%"></div>
+</div>
+<h5 class="mt-3">
+        
+        The Hobbit
+      </h5>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-danger" style="width:50%"></div>
+</div>
+<h5 class="mt-3">
+        The Catcher in the Rye
+      </h5>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-primary" style="width: 75%"></div>
+</div>
+</div>
+
+
+<div class="row pt-4 pb-4 mt-5 justify-content-evenly" style="background-color:lightblue;" id="last">
+  <div class="col-md-3 mt-5">
+<h1 class="mb-3"> Contact form</h1>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+
+   <div class="col-md-5 mt-5">
+    <h3 class="mb-4">
+      Address
+    </h3>
+    <p>
+      2-63 1180 kimbely way, Ramnagar <br>
+      East godavari
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975928.7573934363!2d81.08084416991981!3d17.159422900285268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3827ddaf59b4f7%3A0x620bba59bebea12b!2sEast%20Godavari%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1694528617328!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+<div class="row justify-content-center text-white mt-5" id="footer">
+    <div class="col-md-3">
+<h4>
+    About</h4>
+    <a href="">Our store</a><br>
+        <a href="">our team</a><br>
+            <a href="">Brand</a><br>
+                <a href="">Terms and condition</a><br>
+
+
+    </div>
+
+      <div class="col-md-2">
+<h4>
+    Services</h4>
+    <a href="">How to order</a><br>
+        <a href="">Product</a><br>
+            <a href="">status</a><br>
+                <a href="">promo</a><br>
+        
+      </div>
+<div class="col-md-4 text-end">
+    <h4>For visit
+    </h4>
+<p>
+    google us
+</p>
+<form action="">
+<input type="text" name="">
+<button type="submit"><i class="bi bi-cursor-fill"></i></button>
+</form>
+    
+</div>
+</div>
+
+This was designed by <br>Rudra vinith..
+</div>
+</body>
+</html>
